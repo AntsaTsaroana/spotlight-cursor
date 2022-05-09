@@ -1,0 +1,32 @@
+body{
+    background-color: #f2f2f2;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: none;
+}
+h1{
+    font-size: 4em;
+    color: black;
+    user-select: none;
+    text-align: center;
+}
+h1:hover ~ .cursor{
+    width: 150px;
+    height: 150px;
+}
+.cursor{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    mix-blend-mode: exclusion;   
+    transition: 0.1s; 
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
